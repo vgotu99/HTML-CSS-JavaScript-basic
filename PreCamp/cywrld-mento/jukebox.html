@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="./styles/jukebox.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_header">
+            <div class="wrapper_title">
+                <div class="title">추억의 BGM</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <div class="divideLine"></div>
+            <div class="album_wrapper">
+                <div class="album_wrapper_item">
+                    <img class="album_thumbnail" src="./images/jukebox-01.png">
+                    <div class="album_songtitle">Y</div>
+                    <div class="album_artist">프리스타일</div>
+                </div>
+                <div class="album_wrapper_item">
+                    <img class="album_thumbnail" src="./images/jukebox-02.png">
+                    <div class="album_songtitle">눈의 꽃</div>
+                    <div class="album_artist">박효신</div>
+                </div>
+                <div class="album_wrapper_item">
+                    <img class="album_thumbnail" src="./images/jukebox-03.png">
+                    <div class="album_songtitle">사랑했나봐</div>
+                    <div class="album_artist">윤도현</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper_body">
+            <div class="wrapper_title">
+                <div class="title">추억의 BGM</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <table class="album_table">
+                <!-- <table>은 표를 만들때 사용하면 편하고 그 안에 가로줄은 <tr>로 세로줄은 <th> 혹은 <td>로
+                    만드는데 <th>는 맨윗줄에서 표의 각 칸을 구분해주는 제목 역할을 <td>는 각 칸에 들어갈
+                    내용 역할을 해준다
+                    ex) 가로4 x 세로3인 표는 <tr>4개 <th>1개,<td>2개가 필요함.
+                        하지만 <th>는 각각의 <tr>에 넣어줘야 하므로
+                        사실상 <tr>= 4개 , <th>= 3 x 4 = 12개가 필요하다. -->
+                <tr>
+                    <th class="album_table_checkbox"><input type="checkbox"></th>
+                    <th class="album_table_number">번호</th>
+                    <th class="album_table_song">곡명</th>
+                    <th class="album_table_artist">아티스트</th>
+                </tr>
+                <tr>
+                    <td class="albumTable_checkbox"><input type="checkbox"></td>
+                    <td class="albumTable_number">1</td>
+                    <td class="albumTable_song">눈의 꽃</td>
+                    <td class="albumTable_artist">박효신</td>
+                </tr>
+                <tr>
+                    <td class="albumTable_checkbox"><input type="checkbox"></td>
+                    <td class="albumTable_number">2</td>
+                    <td class="albumTable_song">사랑스러워</td>
+                    <td class="albumTable_artist">김종국</td>
+                </tr>
+                <tr>
+                    <td class="albumTable_checkbox"><input type="checkbox"></td>
+                    <td class="albumTable_number">3</td>
+                    <td class="albumTable_song">내사람</td>
+                    <td class="albumTable_artist">SG 워너비</td>
+                </tr>
+                <tr>
+                    <td class="albumTable_checkbox"><input type="checkbox"></td>
+                    <td class="albumTable_number">4</td>
+                    <td class="albumTable_song">럽럽럽</td>
+                    <td class="albumTable_artist">에픽하이</td>
+                </tr>
+                <tr>
+                    <td class="albumTable_checkbox"><input type="checkbox"></td>
+                    <td class="albumTable_number">5</td>
+                    <td class="albumTable_song">애인 있어요</td>
+                    <td class="albumTable_artist">이은미</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Function</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        .number {
+            margin: 0px 10px;
+        }
+    </style>
+    <!-- <script>
+        const button = () => {
+            document.getElementById("number").innerText = 
+            String (Math.floor(Math.random()*1000000)).padStart(6,"0")
+            document.getElementById("number").style.color = 
+            "#" + String (Math.floor(Math.random()*1000000)).padStart(6,"0")
+        }
+    </script> -->
+    <script src="./05-function.js"></script>
+</head>
+<body>
+    <div class="number" id="number">000000</div>
+    <button onclick="button()">인증번호 전송</button>
+</body>
+</html>
+

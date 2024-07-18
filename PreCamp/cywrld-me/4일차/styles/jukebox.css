@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper_header {
+    width: 100%;
+    height: 203px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper_title {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 5px;
+
+}
+
+.title {
+    color: #55b2e4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.divide_line {
+    border-top: 1px solid gray;
+}
+
+.list_line {
+    border-top: 1px dotted gray;
+}
+
+.album_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+.picture_title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0f465e;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.picture_singer {
+    font-size: 10px;
+    font-weight: 700;
+    color: #999;
+    text-align: center;
+}
+
+
+.wrapper_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.album_table {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.musicbox_category {
+    width: 100%;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #999;
+    margin: 3px 0px;
+}
+
+.musicbox_info {
+    width: 100%;
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 15px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #0f465e;
+    margin: 3px 0px;
+}
+
+.musicbox_rank {
+    width: 70px;
+    color: black;
+    padding-left: 20px;
+}
+
+.category_rank {
+    width: 70px;
+    padding-left: 13px;
+}
+
+.musicbox_title {
+    width: 100%;
+    padding-left: 50px;
+
+}
+
+.musicbox_artist { 
+    width: 100%;
+    padding-left: 78px;
+
+
+}
+
+
+
