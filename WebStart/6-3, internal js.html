@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="5-3, external style sheet.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        ID : <input id="text_id" class="login_input" type="text">
+        <br>
+        PW : <input class="login_input" type="password">
+        <br>
+        <input id="button_login" type="button" value="Login"
+            onclick="popID()">
+    </form>
+    <script>
+        // 로그인 화면 ID 란에 입력된 값을 팝업 창에 띄우기
+        function popID() {
+            alert(document.getElementById('text_id').value);
+            // document.getElementById('id이름').value에서 value는
+            // 해당 id에 입력되는 것을 값으로 가져온다는 뜻으로 반드시 입력해주어야함.
+        }
+    </script>
+</body>
+</html>

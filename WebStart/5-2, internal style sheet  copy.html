@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <style>
+    /* 내부 스타일시트를 사용할때는 head에 style 태그를 걸어주고 시작한다 */
+        h1 {
+            color: red; text-align: center;
+        /* h1 태그 자체에 스타일시트를 적용하는 방법 */
+        }
+        .login_input {
+            font-size: 25px;
+        }
+        /* 지정된 class에 스타일 시트를 적용하는 방법 */
+        #button_login {
+            font-size: 25px;
+            width: 100px;
+            height: 100px;
+        }
+        /* 지정된 id에 스타일 시트를 적용하는 방법 */
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        ID : <input class="login_input" type="text">
+        <br>
+        PW : <input class="login_input" type="password">
+        <br>
+        <input id="button_login" type="button" value="Login">
+    </form>
+</body>
+</html>

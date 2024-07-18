@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="5-3, external style sheet.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        ID : <input id="text_id" class="login_input" type="text">
+        <br>
+        PW : <input class="login_input" type="password">
+        <br>
+        <input id="button_login" type="button" value="Login"
+            onclick="popID()">
+    </form>
+    <script>
+        function popID() {
+            if (!document.getElementById('text_id').value) {
+                // 앞에 !를 붙이면 value 값이 없다는 의미이다.
+                // = document.getElementById('text_id').value == ""
+                alert('아이디를 입력해주세요')
+            } else {
+                alert(document.getElementById('text_id').value);
+            }
+        }
+    </script>
+</body>
+</html>

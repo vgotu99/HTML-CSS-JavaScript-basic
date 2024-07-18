@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../cssBasic"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WebStart"
+	}
+}

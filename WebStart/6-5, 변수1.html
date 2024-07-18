@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="5-3, external style sheet.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        ID : <input id="text_id" class="login_input" type="text">
+        <br>
+        PW : <input class="login_input" type="password">
+        <br>
+        <input id="button_login" type="button" value="Login"
+            onclick="popID()">
+    </form>
+    <script>
+        function popID() {
+            let userID = document.getElementById('text_id').value;
+            // document.getElementById('text_id').value를 userID에 넣은 것이다.
+            // 그러므로 앞으로 userID가 document.getElementById('text_id').value를 대신할 수 있는 것임.
+
+            if (!userID) {
+                // = userID = ""
+                alert('아이디를 입력해주세요')
+            } else {
+                alert(userID);
+            }
+        }
+    </script>
+</body>
+</html>
