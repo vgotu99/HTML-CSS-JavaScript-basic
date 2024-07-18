@@ -1,0 +1,22 @@
+.block_container {
+    border: 3px solid blue;
+    width: 500px;
+}
+
+.inline_container {
+    border: 3px solid red;
+}
+
+.block_container div {
+    border: 3px solid green;
+    width: 400px;
+    display: inline;
+    /* └─> block 요소를 강제로 inline 요소로 변경한다. */
+}
+
+.inline_container span {
+    background-color: red;
+    width: 400px;
+    display: block;
+    /* └─> inline 요소를 강제로 block 요소로 변경한다. */
+}

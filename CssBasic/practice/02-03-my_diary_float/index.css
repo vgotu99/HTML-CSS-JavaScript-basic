@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+.header {
+    /* width: 100%; */
+    /* block 요소는 어차피 부모 요소의 가로 사이즈를 100% 채우기 때문에 사실은 굳이 필요가 없다더라 */
+    border-bottom: 1px solid gray;
+}
+
+.header__inner {
+    width: 900px;
+    height: 100%;
+    margin: 0px auto;
+    /* └─> margin: 0px auto 는 상하 margin은 0px 좌우 margin은 auto 로 둔다는 뜻인데
+           한마디로 flex가 아닌 float로 레이아웃을 구성할때 중앙 배치를 하는 방법인것이다. */
+}
+
+.inner__logo {
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.inner__logo h1 a {
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+.inner__menu {
+    float: left;
+    width: calc(100% - 200px);
+    /* width가 calc(100% - 200px)인 이유는!!
+       애초에 header__inner는 width가 900px인데 inner__logo와 inner__user가
+       각각 100px 씩 차지하고있다. 그러므로 나머지 700px은 inner__menu가 차지하면 될테니
+       calc(=calculate 계산하다)로 calc(100% - 200px)을 pc가 계산하도록 하는것이다.
+       *중요* calc()안에서 이루어지는 사칙연산들은 항상 띄어쓰기를 해줘야한다.
+       ex) calc(500px + 200px) 이런식으로 되어야 한다. calc(500px+200px)이것은 계산이 안됨.  */
+    height: 80px;
+    text-align: center;
+}
+
+.menu__ul {
+    display: inline-block;
+    /* inline 와 block 요소를 모두 갖게 만들어준다 */
+}
+
+.menu__ul li {
+    float: left;
+    list-style: none;
+    /* 일반적인 리스트 <li> 태그에는 앞에 disc라는 채워진 동그라미(구)가
+       달리는 list-style: disc;가 기본 셋팅이 들어가있는데 깔끔하게 만들기 위해
+       list-style: none; 으로 바꿔주자! */
+}
+
+.menu__ul li a {
+    color: black;
+    text-decoration: none;
+    /* <a href=""> 즉 <a> 태그가 적용되어 있는 "링크" 이기 때문에 밑줄이 기본적으로 그어져있다
+        그러므로 text-decoration: none;으로 데코(밑줄)가 되어있는 것을 초기화시켜주자! */
+    padding: 27px 20px;
+    display: block;
+    /* inline 요소는 상하에 padding 혹은 margin 같은 속성으로 위치값을 변경할 수 없다.
+       그러므로 display: block; 으로 강제로 block 요소로 변경해주어야한다! */
+}
+
+.menu__ul li a:hover {
+    /* .class:hover에서 hover는 오버라고 읽으며 마우스를 올렸을때! 무언가 변하도록
+       UI적 변화를 줄 때 사용해주자! */
+    color: orange;
+}
+
+.inner__user {
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 21px;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper {
+    width: 800px;
+    height: 570px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__header__title {
+    background-color: orange;
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
+.wrapper__header__subTitle {
+    font-size: 20xp;
+    margin: 20px 0px;
+    border-bottom: 1px dotted gray;
+    font-weight: 800;
+}
+
+#point1 {
+    font-size: 23px;
+    color: orange;
+    font-weight: 800;
+    text-decoration: underline;
+    display: block;
+    margin: 20px 0px;
+}
+
+.wrapper__body__content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.content__title {
+    background-color: #d2d2d2;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.content__content {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.pizza {
+    color: orange;
+    font-weight: 600;
+}
+
+.frozen {
+    color: blue;
+    font-weight: 600;
+}
+
+.meat {
+    color: saddlebrown;
+    font-weight: 600;
+}
+
+#point2 {
+    color: green;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.date {
+    color: darkgray;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: end; */
+    text-align: end;
+    /* └─> 텍스트를 끝으로 정렬할 수 있는 명령어라서 굳이 display: flex, flex-direction~~~~ 어쩌구 안해도 되고
+            텍스트를 정렬할 때는 그냥 바로 text-align: end로 보내주자 */
+}
+
+
+
+
+

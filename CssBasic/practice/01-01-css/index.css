@@ -1,0 +1,16 @@
+.title {
+    color: red;
+}
+
+.title#headline {
+/* └─> .box1 .title 와 같다 */
+    color: blue;
+}
+
+.contents {
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 600;
+    /* └─> 기본 폰트가 400정도이다 */
+}

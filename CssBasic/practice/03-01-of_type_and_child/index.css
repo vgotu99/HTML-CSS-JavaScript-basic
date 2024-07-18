@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.container *:nth-child(1) {
+    color: red;
+}
+
+.container p:first-of-type {
+    color: blue;
+}
+
+/* └─> first-child 와 first-of-type 이라는 가상선택자는
+       .class tag:~~~~~~~ 이렇게 들어간다.
+       child는 전체적으로 봤을때 tag의 순서와 nth-child(n)의 n번째 순서가 모두 맞으면 적용된다.
+       하지만!!!!
+       of-type은 전체적으로 봤을때 몇번째 순서인지는 상관 없고
+       그저 class에 속하는 tag들 중 n번째 tag에만 적용된다.*/
+
+.container p:last-of-type {
+    background-color: yellow;
+}
+
+.container p:nth-of-type(2) {
+    background-color: bisque;
+}
+
+.container span:first-of-type {
+    color: darkgreen;
+}
+
+.container span:nth-child(4) {
+    font-weight: 800;
+    text-decoration: underline;
+}

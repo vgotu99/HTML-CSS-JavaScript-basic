@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_diary</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="inner__logo">
+                <h1><a href="#none">HAGD</a></h1>
+                    <!-- └─> <a href="A"> 즉 a 태그는 클릭시 "A"라는 링크로 연결되도록 해주는 태그다 -->
+            </div>
+            <div class="inner__menu">
+                <ul class="menu__ul">
+                    <li>
+                        <a href="#none">어제의 일기</a>
+                    </li>
+                    <li>
+                        <a href="#none">오늘의 일기</a>
+                    </li>
+                    <li>
+                        <a href="#none">내일의 일기</a>
+                    </li>
+                </ul>
+                <!-- └─> 메뉴와 같은 홈페이지의 전체적인 네이게이션 바의 경우에는
+                        <ul> 태그로 리스트 그룹을 만들어주고 <li> 태그로 각 리스트를 만들어준다.
+                        ex) 무신사 홈페이지에서 카테고리(inner__menu)->상의(ul)->셔츠(li) -->
+            </div>
+            <div class="inner__user">
+                <img src="../practice/02-03-my_diary_float/img/portrait.png" alt="유저 정보" width="32" height="32">
+                <!-- └─> <img src="" alt=""> 는 img(이미지)를 src(경로)를 통해서 불러오고
+                            alt(대체정보)를 통해서 이것이 무엇인지 표시를 해주면 된다.
+                            또한 해당 이미지에 class를 부여해주고 css에 들어가서 사이즈를 변경해주는 것
+                            보다는 그냥 바로 width와 height를 부여해주는게 편하겠넹 -->
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper__header">
+                <h1 class="wrapper__header__title">나만의 일기장</h1>
+                <p class="wrapper__header__subTitle">
+                    나만의 일기장입니다!<br>
+                    원하는 색과 사이즈로 일기장을 커스텀해보세요!<br>
+                    <span id="point1">
+                        Have a Good Day.😀
+                    </span>
+                </p>
+            </div>
+            <div class="wrapper__body">
+                <div class="wrapper__body__content">
+                    <p class="content__title">
+                        📌 나의 일기<br>
+                        <!-- br 태그를 이용하면 줄바꿈을 할 수 있습니다. -->
+                    </p>
+                    <p class="content__content">
+                        오늘은 <span class="pizza">피자🍕</span>를 먹었다. 풀무원에서 나오는 <span class="frozen">냉동🧊</span> 시카고 피자였다<br>
+                        포장지에 <span class="meat">미트🍖</span>가 잔뜩 들어가있다고 되어있어 기대하고 포장을 뜯었다.<br>
+                        흠.. 벌써 비쥬얼이 잔뜩은 아닌 거 같은데..? 라고 생각하며 에프에 돌렸다.<br>
+                        조리가 끝나고 한 조각을 먹었을 때 역시나 실망하였다.<br>
+                        <span id="point2">이거 끝내고 맛있는 것을 먹어야겠다.</span>
+                        <!-- <span>p 태그 안에서 span 태그를 사용하면, 일부 문장에만 css를 적용할 수 있습니다.</span> -->
+                    </p>
+                    <p class="date">
+                        2023년 9월 14일<br>
+                        날씨: 하루종일 비옴💧☔
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

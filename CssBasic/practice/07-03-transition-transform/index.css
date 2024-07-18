@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 150px;
+    position: relative;
+    background-image: linear-gradient(to bottom,rgb(255, 72, 0),rgb(255, 153, 0));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* transition: translate 0.5s linear 0.5s; */
+}
+
+.container:hover .word {
+    transform: translate(0px,-30px);
+    /* └─> y축을 위로 30px만큼 이동 */
+}
+
+.word {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.word1 {
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+.word2 {
+    transition: transform 0.5s ease-in-out 0.1s;
+}
+
+.word3 {
+    transition: transform 0.5s ease-in-out 0.2s;
+}
+
+.word4 {
+    transition: transform 0.5s ease-in-out 0.3s;
+}
+
+.word5 {
+    transition: transform 0.5s ease-in-out 0.4s;
+}
+
+.word6 {
+    transition: transform 0.5s ease-in-out 0.5s;
+}
+
+.word7 {
+    transition: transform 0.5s ease-in-out 0.6s;
+}
+
+.word8 {
+    transition: transform 0.5s ease-in-out 0.7s;
+}
+
+.word9 {
+    transition: transform 0.5s ease-in-out 0.8s;
+}

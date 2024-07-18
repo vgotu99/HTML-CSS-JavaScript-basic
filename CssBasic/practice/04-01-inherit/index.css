@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    color: skyblue;
+    font-size: 30px;
+    /* └─> 상속되는 속성 */
+    border: 4px solid orange;
+    /* └─> 상속되지 않는 속성 */
+}
+
+.inner-box {
+    color: lightcoral;
+}

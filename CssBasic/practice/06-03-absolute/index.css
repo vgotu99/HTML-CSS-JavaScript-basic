@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid red;
+    padding: 10px;
+    position: relative;
+}
+
+.wrapper {
+    border: 3px dashed blue;
+    padding: 10px;
+    position: relative;
+
+}
+
+.item {
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    /* └─> 부모요소들 중 position:relative; 가 없다면 body를 기준으로 position을 설정된다. */
+    top: 10;
+    left: 10;
+}

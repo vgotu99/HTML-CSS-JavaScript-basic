@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    background-color: bisque;
+    border: 2px solid red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap은 nowrap이 기본값이다. nowrap인 경우에는 container의 width에 맞춰서 div들의 가로가
+       설정해준 200px이 아닌 container의 600px에 맞춰서 줄어든 채로 개행된다.
+       하지만 flex-wrap: wrap;을 해주면 무지성 가로 정렬이 아닌 div의 width인 200px을
+       살려서 줄바꿈 된 채로 개행된다. */
+    align-content: space-evenly;
+    /* align-content는 align-items(한줄을 정렬)와 달리 여러줄을 정렬할때 사용된다. */
+    
+
+}
+
+.container div {
+    background-color: lightgreen;
+    margin: 5px;
+    width: 200px;
+}
+
+div .box4 {
+    order: 3;
+    /* order는 각각에게 배열되는 순서를 부여해주는 것인데. order의 기본값은 0이기 때문에
+       order를 부여해주지 않은 것들은 order를 부여해준 것들 보다 앞에 배열되므로
+       순위차트 같은 것을 만들 목적이라면 모두에게 order를 부여해주자 */
+    background-color: lightcoral;
+}
+
+div .box5 {
+    order: 1;
+    background-color: lightsalmon;
+}

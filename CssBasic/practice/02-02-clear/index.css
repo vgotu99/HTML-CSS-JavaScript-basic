@@ -1,0 +1,36 @@
+.box1 {
+    /* width: 300px; */
+    height: 400px;
+    background-color: red;
+    /* padding: 20px; */
+    color: #fff;
+    /* box-sizing: border-box; */
+    float: left;
+}
+
+.box2 {
+    /* width: 300px; */
+    height: 200px;
+    background-color: blue;
+    /* padding: 20px; */
+    color: #fff;
+    /* box-sizing: border-box; */
+    float: right;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* 위 box1과 box2에 중복으로 같은 속성과 값을 가지고 있는 경우 따로 box라는 공통된
+        class를 할당해주고 css에 해당 class에 속성과 값을 주면 된다. so easy하지?*/
+}
+
+/* .box3 {
+    clear: both;
+
+} */
+
+.clearfix {
+    clear:both
+}

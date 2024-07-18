@@ -1,0 +1,15 @@
+* {
+    background-color: bisque;
+}
+
+div {
+    background-color: blue;
+}
+
+.text-class {
+    background-color: yellow;
+}
+
+#text-id {
+    background-color: aqua;
+}

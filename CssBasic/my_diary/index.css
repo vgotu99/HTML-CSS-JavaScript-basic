@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper {
+    width: 800px;
+    height: 570px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__header__title {
+    background-color: orange;
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
+.wrapper__header__subTitle {
+    font-size: 20xp;
+    margin: 20px 0px;
+    border-bottom: 1px dotted gray;
+    font-weight: 800;
+}
+
+#point1 {
+    font-size: 23px;
+    color: orange;
+    font-weight: 800;
+    text-decoration: underline;
+    display: block;
+    margin: 20px 0px;
+}
+
+.wrapper__body__content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.content__title {
+    background-color: #d2d2d2;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.content__content {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.pizza {
+    color: orange;
+    font-weight: 600;
+}
+
+.frozen {
+    color: blue;
+    font-weight: 600;
+}
+
+.meat {
+    color: saddlebrown;
+    font-weight: 600;
+}
+
+#point2 {
+    color: green;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.date {
+    color: darkgray;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: end; */
+    text-align: end;
+    /* └─> 텍스트를 끝으로 정렬할 수 있는 명령어라서 굳이 display: flex, flex-direction~~~~ 어쩌구 안해도 되고
+            텍스트를 정렬할 때는 그냥 바로 text-align: end로 보내주자 */
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.header__inner {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner__logo {
+    width: 100px;
+}
+
+.inner__logo h1 a {
+    text-decoration: none;
+    color: orange;
+}
+
+.menu__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu__ul li {
+    list-style: none;
+}
+
+.menu__ul li a {
+    padding: 10px 20px;
+    /* └─> padding: 10px 20px 하였을때 상하는 10px, 좌우는 20px 패딩이 들어가야 하지만
+           background-color를 넣어보면 상하에는 패딩이 들어가지 않은 것을 확인할 수 있다.
+           이유는 <a>태그가 인라인 요소이기 때문인데 그렇기에 display: block;이라는 속성을 주어서
+           인라인 요소인 <a>를 블록요소로 바꿔주면 된다.
+           
+           *그래서 왜 상하에는 10px을 줘야하는데???
+            그 이유는 사용자 편의성에 있다 상하에 여유 픽셀을 주지 않으면 해당 버튼(링크로 연결되는)을
+            정확하게 눌러야하지만 여유 픽셀을 준다면 사용하는 사람이 클릭하는데에 있어서 편해지기 때문!! */
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+.inner__user {
+    width: 100px;
+}
+
+
+

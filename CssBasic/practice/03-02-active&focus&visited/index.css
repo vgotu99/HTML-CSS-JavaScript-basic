@@ -1,0 +1,16 @@
+.button1:active {
+    background-color: red;
+}
+/* class:active 는 버튼을 누르거나 했을때 실행된다 */
+
+.input1:focus {
+    background-color: green;
+}
+
+/* class:focus 는 해당 입력창을 직접 클릭하여 선택하거나 탭으로 해당 입력창을 선택했을 때 실행된다 */
+
+.link1:visited {
+    color: red;
+}
+
+/* class:visited 는 해당 링크를 방문한 적이 있을 경우 표시를 해주는 역할이다 */

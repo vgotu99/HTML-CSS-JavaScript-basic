@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-bar {
+    background-color: red;
+    width: 170px;
+    padding: 0px 15px;
+}
+
+.menu-bar ul {
+    width: 100%;
+    padding: 0px;
+}
+
+.menu-bar li {
+    list-style: none;
+    padding: 5px 0px;
+    color: #fff;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+    /* └─> 불투명도를 설정해주는 opacity를 사용하게 되면 .menu-bar li에 전부 걸리기 때문에
+           rgba를 이용하여 대쉬선에만 불투명도를 할당해준다. 하지만 divide-line 을 따로 만들고
+           필요한 곳에 divide-line을 넣어주게 되는 경우에는 .divide-line { opacity: 0.n; } 을 넣어주면 더 편하겠다.  */
+}
+
+.contents {
+    width: calc(100% - 170px);
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.item {
+    width: 24%;
+    /* 한줄에 아이템이 4개씩 들어가야하는데 왜 25%가 아닌 24%인가?
+       그 이유는 각 이미지들이 딱 붙어서 보이기 위함이 아니라면 각 이미지들을
+       떨어뜨리기 위하여 margin을 주게되면 25% * 4 + margin값 = 100%가 넘어버리기 때문이다. */
+    height: 180px;
+    background-image: url(./img/real.png);
+    margin: 5px 0px;
+    background-size: cover;
+}

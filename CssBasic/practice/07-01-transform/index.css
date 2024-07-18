@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 320px;
+}
+
+.base {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.target {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 255,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.target span {
+    color: white;
+}
+
+.target1 {
+    transform: translate(50%,20px);
+    /* └─> transform: translate(n,m) 는 n만큼 오른쪽으로 m만큰 아래로 위치를 이동시킨다. */
+}
+
+.target2 {
+    transform: scale(0.8,1.2);
+    /* └─> transform: scale(n,m) 은 가로사이즈를 n배하고 세로사이즈를 m배 해준다.
+           transform: scale(n) 은 x축 y축 모두 n배해준다. */
+}
+
+.target3 {
+    transform: skew(30deg,20deg);
+    /* └─> transform: skew(Ndeg,Mdeg) 는 가로축으로 N도 만큼, 세로축으로 M도 만큼 기울인다. */
+}
+
+.target4 {
+    transform: rotate(45deg);
+    /* └─> transform: rotate(Ndeg) 는 중심을 축으로 N도만큼 돌리는것이다.
+           이때 음수도 사용가능하며 -90deg = 270deg */
+}
+
