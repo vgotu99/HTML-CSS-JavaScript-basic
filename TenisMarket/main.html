@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Main</title>
+</head>
+<body>
+    <h1>Tennis market</h1>
+    <div class="main_welcome">
+        Welcome to Tennis market!
+        <br>
+        Enjoy your shopping
+        <br>
+        <br>
+        <a href="orderlist.html">order list</a>
+        <!-- a는 링크를 걸어야할 때 사용하는 태그 -->
+    <!-- </div> -->
+    <div class='main_item' style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+    <!-- grid-template-columns: repeat(3, 1fr); 는 1프레임(한 줄)에 아이템을 3개씩 정렬한다는 뜻
+         gap: 10px; 은 각 아이템 사이 공간을 10px로 설정한다는 뜻 -->
+        <div class="card">
+        <!-- div는 의미없는 구역을 나타내는 태그 -->
+            <img class="card_img" src="./img/redRacket.png">
+            <p class="card_title">Red Racket</p>
+            <!-- p는 의미없는 문장,단락을 나타내는 태그 -->
+            <input class="card_button" type="button" value="order" onclick="alert(1);">
+            <!-- value 값은 버튼 안에 넣을 텍스트를 적어주면 된다 -->
+        </div>
+        <div class="card">
+            <img class="card_img" src="./img/blueRacket.png">
+            <p class="card_title">Blue Racket</p>
+            <input class="card_button" type="button" value="order" onclick="alert(2);">
+        </div>
+        <div class="card">
+            <img class="card_img" src="./img/blackRacket.png">
+            <p class="card_title">Black Racket</p>
+            <input class="card_button" type="button" value="order" onclick="alert(3);">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.aTag_box {
+    margin-bottom: 50px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /* table 태그는 text-align: center; 해주려면 좌우 마진을 오토로 해주어야한다*/
+}
